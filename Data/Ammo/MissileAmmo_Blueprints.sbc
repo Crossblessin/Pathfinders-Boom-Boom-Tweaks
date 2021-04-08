@@ -56,12 +56,12 @@
         <Item Amount="750" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="250" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="150" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="30" TypeId="Ingot" SubtypeId="Uranium" />
+        <Item Amount="1500" TypeId="Ingot" SubtypeId="Uranium" />
 		<Item Amount="5" TypeId="Ingot" SubtypeId="Platinum" />
         <Item Amount="150" TypeId="Ingot" SubtypeId="Magnesium" />
         
       </Prerequisites>
-      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_Shiva_Ammo" />
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MXA_\_Ammo" />
       <BaseProductionTimeInSeconds>240.0</BaseProductionTimeInSeconds>
 	  
     </Blueprint>
