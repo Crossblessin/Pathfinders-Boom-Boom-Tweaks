@@ -26,7 +26,7 @@ namespace WeaponThread
             AmmoRound = "Low Power",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.32f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 25650f,
+            BaseDamage = 30650f,
             Mass = 450f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 900000f,
@@ -82,14 +82,14 @@ namespace WeaponThread
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
+                    Large = .5f,
                     Small = .3f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = .5f,
-                    Light = -1f,
-                    Heavy = -1f,
+                    Light = .5f,
+                    Heavy = .3f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
