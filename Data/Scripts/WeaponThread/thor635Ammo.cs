@@ -19,7 +19,7 @@ namespace WeaponThread
             AmmoRound = "flak635round",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.35f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 650f,
+            BaseDamage = 550f,
             Mass = 120f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 90000f,
@@ -58,19 +58,19 @@ namespace WeaponThread
 		        },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = 0.1f,
+                    Large = .5f,
+                    Small = .5f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
-                    NonArmor = -1f,
+                    Armor = .5f,
+                    Light = .5f,
+                    Heavy = .5f,
+                    NonArmor = .5f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f,
+                    Modifier = 2f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
@@ -115,12 +115,12 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = true,
                     ArmOnlyOnHit = false,
-                    DetonationDamage = 50000,
-                    DetonationRadius = 7,
+                    DetonationDamage = 30000,
+                    DetonationRadius = 5,
                 },
                 EwarFields = new EwarFieldsDef
                 {
-                    Duration = 60,
+                    Duration = 40,
                     StackDuration = true,
                     Depletable = false,
                     MaxStacks = 10,
