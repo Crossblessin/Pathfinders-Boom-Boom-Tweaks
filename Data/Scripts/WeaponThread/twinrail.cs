@@ -77,7 +77,7 @@ namespace WeaponThread {
                     Offset = Vector(x: 0, y: 0, z: 0),
                 },
                 Other = new OtherDef {
-                    GridWeaponCap = 0,
+                    GridWeaponCap = 3,
                     RotateBarrelAxis = 0,
                     EnergyPriority = 0,
                     MuzzleCheck = false,
