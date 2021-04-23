@@ -19,7 +19,7 @@ namespace WeaponThread
             AmmoRound = "autocannon185round",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.35f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 250f,
+            BaseDamage = 350f,
             Mass = 8.5f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,
@@ -38,7 +38,7 @@ namespace WeaponThread
             Shrapnel = new ShrapnelDef
             {
                 AmmoRound = "avengerShrapnel",
-                Fragments = 20,
+                Fragments = 0,
 				Reverse = false,
 				RandomizeDir = true,
                 Degrees = 360, // 0 - 360
@@ -58,8 +58,8 @@ namespace WeaponThread
 		        },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = 0.1f,
+                    Large = .5f,
+                    Small = .5f,
                 },
                 Armor = new ArmorDef
                 {
