@@ -121,7 +121,7 @@ namespace WeaponThread
                 AreaEffect = EmpField, // Disabled = do not use area effect at all, Explosive, Radiant, AntiSmart, JumpNullField, JumpNullField, EnergySinkField, AnchorField, EmpField, OffenseField, NavField, DotField.
                 Base = new AreaInfluence
                 {
-                    Radius = 75f, // the sphere of influence of area effects
+                    Radius = 90f, // the sphere of influence of area effects
                     EffectStrength = 25000f, // For ewar it applies this amount per pulse/hit, non-ewar applies this as damage per tick per entity in area of influence. For radiant 0 == use spillover from BaseDamage, otherwise use this value.
                 },
                 Pulse = new PulseDef // interval measured in game ticks (60 == 1 second), pulseChance chance (0 - 100) that an entity in field will be hit
@@ -161,8 +161,8 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = false,
                     ArmOnlyOnHit = true,
-                    DetonationDamage = 4500f,
-                    DetonationRadius = 12f,
+                    DetonationDamage = 5500f,
+                    DetonationRadius = 10f,
                     MinArmingTime = 0, //Min time in ticks before projectile will arm for detonation (will also affect shrapnel spawning)
                 },
                 EwarFields = new EwarFieldsDef
@@ -170,7 +170,7 @@ namespace WeaponThread
                     Duration = 900,
                     StackDuration = false,
                     Depletable = false,
-                    MaxStacks = 0,
+                    MaxStacks = 2,
                     TriggerRange = 0f,
                     DisableParticleEffect = true,
                     Force = new PushPullDef // AreaEffectDamage is multiplied by target mass.
@@ -195,8 +195,8 @@ namespace WeaponThread
                 TargetLossDegree = 0f,
                 TargetLossTime = 600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                AccelPerSec = 25f,
-                DesiredSpeed = 300,
+                AccelPerSec = 50f,
+                DesiredSpeed = 500,
                 MaxTrajectory = 12500f,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -205,7 +205,7 @@ namespace WeaponThread
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
-                    Inaccuracy = 1.0f, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Inaccuracy = 0f, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 2f, // controls how responsive tracking is.
                     MaxLateralThrust = .49f, // controls how sharp the trajectile may turn
                     TrackingDelay = 20, // Measured in Shape diameter units traveled.
