@@ -38,7 +38,7 @@ namespace WeaponThread
             Shrapnel = new ShrapnelDef
             {
                 AmmoRound = "hermesRail1Shrapnel",
-                Fragments = 40,
+                Fragments = 20,
 				Reverse = false,
 				RandomizeDir = true,
                 Degrees = 360, // 0 - 360
