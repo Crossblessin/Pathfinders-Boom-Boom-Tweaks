@@ -63,14 +63,14 @@ namespace WeaponThread
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
+                    Armor = .5f,
+                    Light = .5f,
+                    Heavy = .5f,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f,
+                    Modifier = 1.5f,
                     Type = Kinetic,
                     BypassModifier = -1f,
                 },
@@ -115,12 +115,12 @@ namespace WeaponThread
                 {
                     DetonateOnEnd = false,
                     ArmOnlyOnHit = false,
-                    DetonationDamage = 60000,
+                    DetonationDamage = 40000,
                     DetonationRadius = 12,
                 },
                 EwarFields = new EwarFieldsDef
                 {
-                    Duration = 60,
+                    Duration = 40,
                     StackDuration = true,
                     Depletable = false,
                     MaxStacks = 10,
