@@ -19,7 +19,7 @@ namespace WeaponThread
             AmmoRound = "railgun265round",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 20.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 20000f,
+            BaseDamage = 19000f,
             Mass = 13f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 6500f,
