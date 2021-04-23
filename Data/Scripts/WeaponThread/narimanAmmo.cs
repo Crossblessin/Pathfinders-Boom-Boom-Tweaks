@@ -19,7 +19,7 @@ namespace WeaponThread
             AmmoRound = "nariman70round",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.35f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 280f,
+            BaseDamage = 320f,
             Mass = 8.5f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,
@@ -38,7 +38,7 @@ namespace WeaponThread
             Shrapnel = new ShrapnelDef
             {
                 AmmoRound = "narimanShrapnel",
-                Fragments = 20,
+                Fragments = 0,
 				Reverse = false,
 				RandomizeDir = true,
                 Degrees = 360, // 0 - 360
@@ -63,10 +63,10 @@ namespace WeaponThread
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = -1f,
-                    Heavy = -1f,
-                    NonArmor = -1f,
+                    Armor = .5f,
+                    Light = .5f,
+                    Heavy = .5f,
+                    NonArmor = .5f,
                 },
                 Shields = new ShieldDef
                 {
