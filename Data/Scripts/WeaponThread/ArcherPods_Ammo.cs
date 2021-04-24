@@ -141,7 +141,7 @@ namespace WeaponThread
                         {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 5000,
+                            MaxDistance = 10000,    //  Increased range 4-24 Cross,Bob
                             MaxDuration = 1,
                             Scale = 1,
                         },
@@ -197,7 +197,7 @@ namespace WeaponThread
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 50f,
                 DesiredSpeed = 500,
-                MaxTrajectory = 5000f,
+                MaxTrajectory = 10000f,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -241,7 +241,7 @@ namespace WeaponThread
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
+                            MaxDistance = 10000,
                             MaxDuration = 10,
                             Scale = .125f,
                         },
@@ -257,7 +257,7 @@ namespace WeaponThread
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 5000,
+                            MaxDistance = 10000,
                             MaxDuration = 1,
                             Scale = .15f,
                             HitPlayChance = 1f,
